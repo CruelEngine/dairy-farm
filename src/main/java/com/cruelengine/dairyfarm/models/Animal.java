@@ -8,7 +8,6 @@ public class Animal {
 	private Type type;
 	private String id;
 	private HealthStatus healthStatus;
-	private String[] medicalRecords;
 	
 	public Animal(Type type, String id, HealthStatus healthStatus) {
 		super();
@@ -35,15 +34,4 @@ public class Animal {
 	public void setHealthStatus(HealthStatus healthStatus) {
 		this.healthStatus = healthStatus;
 	}
-
-	public String[] getMedicalRecords() {
-		return medicalRecords;
-	}
-
-	public void setMedicalRecords(String[] medicalRecords) {
-		this.medicalRecords = medicalRecords;
-	}
-
-	
-	
 }

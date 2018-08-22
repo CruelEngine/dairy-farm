@@ -7,13 +7,15 @@ public class Worker {
 	private long createdTime;
 	private String expenses;
 	private String salary;
+	private String dfId;
 	
-	public Worker(String name, long updateTime, long createdTime, String expenses, String salary) {
+	public Worker(String name, long updateTime, long createdTime, String expenses, String salary , String dfId) {
 		this.name = name;
 		this.updateTime = updateTime;
 		this.createdTime = createdTime;
 		this.expenses = expenses;
 		this.salary = salary;
+		this.setDfId(dfId);
 	}
 	
 	public String getName() {
@@ -45,6 +47,14 @@ public class Worker {
 	}
 	public void setSalary(String salary) {
 		this.salary = salary;
+	}
+
+	public String getDfId() {
+		return dfId;
+	}
+
+	public void setDfId(String dfId) {
+		this.dfId = dfId;
 	}
 	
 	

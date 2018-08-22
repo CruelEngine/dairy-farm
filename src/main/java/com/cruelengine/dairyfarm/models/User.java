@@ -14,9 +14,9 @@ public class User extends Worker{
 		this.accountType = accountType;
 	}
 
-	public User(String name, long updateTime, long createdTime, String expenses, String salary,
+	public User(String name, long updateTime, long createdTime, String expenses, String salary,String dfId ,
 			AccountType accountType) {
-		super(name, updateTime, createdTime, expenses, salary);
+		super(name, updateTime, createdTime, expenses, salary , dfId);
 		this.accountType = accountType;
 	}
 	
