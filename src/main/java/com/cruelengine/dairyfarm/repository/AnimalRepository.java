@@ -1,4 +1,4 @@
-package com.cruelengine.diaryfarm.repository;
+package com.cruelengine.dairyfarm.repository;
 
 import java.util.List;
 
