@@ -1,11 +1,12 @@
 package com.cruelengine.dairyfarm.repository;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.reactive.ReactiveCrudRepository;
+import org.springframework.stereotype.Repository;
 
 import com.cruelengine.dairyfarm.persistence.Worker;
 
-
-public interface WorkerRepository extends CrudRepository<Worker, String>{
+@Repository
+public interface WorkerRepository extends ReactiveCrudRepository<Worker, String>{
 
 	
 }
