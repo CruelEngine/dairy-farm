@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRep
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
-@ComponentScan(basePackages= {"com.cruelengine.dairyfarm.services", "com.cruelengine.dairyfarm.controllers","com.cruelengine.dairyfarm.persitence"})
+@ComponentScan(basePackages= {"com.cruelengine.dairyfarm.services", "com.cruelengine.dairyfarm.controllers","com.cruelengine.dairyfarm.persitence","com.cruelengine.dairyfarm.initializers"})
 @EnableReactiveMongoRepositories("com.cruelengine.dairyfarm.repository")
 @EnableTransactionManagement
 //@EntityScan("com.cruelengine.dairyfarm.persitence")
