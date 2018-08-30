@@ -1,10 +1,19 @@
-<div style="display:flex;flex-direction: column;flex-wrap: wrap;">
-  <div>
-    <label for="username">User Name:</label>
-    <input id="username" type="text" />
-  </div>
-  <div>
-      <label for="password">Password:</label>
-      <input id="password" type="password" />
+<!-- <div style='margin:auto;left:0;right:0;left:0;top:0;'> -->
+  <div class="login-align login-wrap background">
+    <div class='window'>
+        <div class='login-align login-data-align'>
+            <label for="username">User Name:</label>
+            <input id="username" type="text" />
+          </div>
+          <div class='login-align'>
+              <label for="password">Password:</label>
+              <input id="password" type="password" />
+            </div>
+            <div class=''>
+                <button (click)="login()">Login</button>
+            </div>
     </div>
-</div>
+
+  </div>
+  
+<!-- </div> -->
