@@ -28,5 +28,19 @@
 }
 
 .login-data-align{
-    justify-content: baseline;
+    margin-bottom: 0.75rem;
+}
+
+.login-button{
+    padding: 5% 5%;
+    margin: 10% 10%;
+    background: #FFF;
+    border: #dcdcdc 1px solid;
+    box-shadow: 0.5px 0.5px 0.5rem 1px #DCDCDC;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.input-details{
+    padding:0.75rem 0.5rem;
 }

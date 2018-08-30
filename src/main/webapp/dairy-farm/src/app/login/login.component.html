@@ -1,19 +1,18 @@
-<!-- <div style='margin:auto;left:0;right:0;left:0;top:0;'> -->
-  <div class="login-align login-wrap background">
-    <div class='window'>
+
+<div class="login-align login-wrap background">
+  <div class='window'>
+    <form [formGroup]="loginForm" (ngSubmit)="login(loginForm.value)">
         <div class='login-align login-data-align'>
-            <label for="username">User Name:</label>
-            <input id="username" type="text" />
+            <input placeholder="UserName" type="text" formControlName="username" class='input-details'/>
           </div>
           <div class='login-align'>
-              <label for="password">Password:</label>
-              <input id="password" type="password" />
-            </div>
-            <div class=''>
-                <button (click)="login()">Login</button>
-            </div>
-    </div>
+              <input placeholder="Password" type="password" formControlName="password" class='input-details'/>
+          </div>
+          <div class='login-align login-wrap'>
+                <button type="submit" class='login-button'>Login</button>
+          </div>
+    </form>
 
   </div>
-  
-<!-- </div> -->
+
+</div>
