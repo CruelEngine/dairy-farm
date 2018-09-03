@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Login } from '../login';
+import { LoginService } from '../login.service';
 
 
 @Component({
@@ -10,7 +11,7 @@ import { Login } from '../login';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private _fb : FormBuilder) { }
+  constructor(private _fb : FormBuilder , private _loginService : LoginService) { }
 
   loginForm : FormGroup
 
@@ -26,6 +27,9 @@ export class LoginComponent implements OnInit {
   login(loginDetails: Login){
     console.log('login clicked');
     console.log(loginDetails);
+    this._loginService.login(loginDetails).subscribe( (resposne) => {
+        console.log('Hello world');
+    });
   }
 
 }
