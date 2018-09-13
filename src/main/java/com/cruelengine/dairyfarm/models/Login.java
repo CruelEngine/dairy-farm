@@ -1,9 +1,15 @@
 package com.cruelengine.dairyfarm.models;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+@Data @AllArgsConstructor @NoArgsConstructor @ToString
 public class Login {
 	
-	String username;
-	String password;
+	private String username;
+	private String password;
 	
 	public String getUsername() {
 		return username;
@@ -20,4 +26,7 @@ public class Login {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
+	
+	
 }
